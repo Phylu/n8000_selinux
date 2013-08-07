@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+
+<!-- This projects will unpatch the N8000 kernel to be vulnerable for ExynosAbuse again -->
+<!--
+        <remove-project name="CyanogenMod/android_kernel_samsung_smdk4412" />
+        <project path="kernel/samsung/smdk4412" name="Phylu/android_kernel_samsung_smdk4412/" remote="github" />
+        <remove-project name="CyanogenMod/android_device_samsung_smdk4412-common" />
+        <project name="Phylu/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" />
+-->
+
+<!-- Projects for SELinux policies -->
+        <remove-project name="CyanogenMod/android_device_samsung_n80xx-common" />
+        <project name="Phylu/android_device_samsung_n80xx-common" path="device/samsung/n80xx-common" remote="github" />
+        <remove-project name="CyanogenMod/android_device_samsung_n8000" />
+        <project name="Phylu/android_device_samsung_n8000" path="device/samsung/n8000" remote="github" />
+
+<!-- Project for proprietary Samsung files -->
+	<project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remot="github" />
+
+</manifest>
